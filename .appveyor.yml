@@ -9,7 +9,7 @@ branches:
 build: off
 
 install:
-  - java -jar ./artifacts/app-delivery.jar &
+  - java -jar ./artifacts/app-card-delivery.jar &
 
 
 
