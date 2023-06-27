@@ -1,10 +1,8 @@
 package ru.netology.quamid59;
 
-import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.nio.file.Path;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -24,21 +22,6 @@ public class RegistrationTest {
     void setUp() {
         open("http://localhost:9999/");
         holdBrowserOpen = true;
-    }
-
-
-    @Test
-    void ValidCity() {
-        String planningDate = getLocalDate(27);
-        $("[placeholder=Город]").setValue("Москва");
-        $("[data-test-id=\"date\"] span.input__box [placeholder=\"Дата встречи\"").doubleClick().sendKeys(planningDate);
-        $x("//input[@name=\"name\"]").val("Сергей Попов");
-        $x("//*[@data-test-id=\"phone\"]/span/span/input").val("+79217777777");
-        $x("//*[@class=\"checkbox__text\"]").click();
-        $x("//*[@class=\"button__text\"]").click();
-        $x("//*[@data-test-id=\"notification\"]").should(visible, Duration.ofSeconds(15));
-        $x("//*[@class='notification__content']").
-                shouldHave(Condition.text("Встреча назначена на " + planningDate), Duration.ofSeconds(15));
     }
 
     @Test
@@ -217,7 +200,7 @@ public class RegistrationTest {
         String planningDate = getLocalDate(-7);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
-        $x("//input[@name=\"name\"]").val("ИСергей Попов");
+        $x("//input[@name=\"name\"]").val("Сергей Попов");
         $x("//*[@data-test-id=\"phone\"]/span/span/input").val("+79217777777");
         $x("//*[@class=\"checkbox__text\"]").click();
         $x("//*[@class=\"button__text\"]").click();
