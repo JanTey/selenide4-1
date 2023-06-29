@@ -38,7 +38,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void CityWithSpecSymbols() {
+    void cityWithSpecSymbols() {
         String planningDate = getLocalDate(8);
         $x("//input[@placeholder=\"Город\"]").val("Москва!");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -51,7 +51,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void NameWithSecondName() {
+    void nameWithSecondName() {
         String planningDate = getLocalDate(27);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -65,7 +65,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void DoubleSecondName() {
+    void doubleSecondName() {
         String planningDate = getLocalDate(28);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -79,7 +79,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void NameWithNum() {
+    void nameWithNum() {
         String planningDate = getLocalDate(28);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -92,7 +92,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void NameEnglish() {
+    void nameEnglish() {
         String planningDate = getLocalDate(28);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -105,7 +105,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void NameWithSpecSymbols() {
+    void nameWithSpecSymbols() {
         String planningDate = getLocalDate(28);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -118,7 +118,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void PhoneWithoutPlus() {
+    void phoneWithoutPlus() {
         String planningDate = getLocalDate(40);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -131,7 +131,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void PhoneWithOneNumber() {
+    void phoneWithOneNumber() {
         String planningDate = getLocalDate(40);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -144,7 +144,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void PhoneWithForm() {
+    void phoneWithForm() {
         String planningDate = getLocalDate(40);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -157,7 +157,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void PhoneEmpty() {
+    void phoneEmpty() {
         String planningDate = getLocalDate(40);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -170,7 +170,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void NextDayMeeting() {
+    void nextDayMeeting() {
         String planningDate = getLocalDate(1);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -183,7 +183,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void Plus0days() {
+    void plus0days() {
         String planningDate = getLocalDate(0);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -196,7 +196,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void Minus7Days() {
+    void minus7Days() {
         String planningDate = getLocalDate(-7);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -209,7 +209,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void FebruaryDays() {
+    void februaryDays() {
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys("30.02.2023");
         $x("//input[@name=\"name\"]").val("Сергей Попов");
@@ -221,7 +221,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void UncheckedBox() {
+    void uncheckedBox() {
         String planningDate = getLocalDate(3);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
@@ -235,7 +235,7 @@ public class RegistrationTest {
     }
 
     @Test
-    void CheckedBox() {
+    void checkedBox() {
         String planningDate = getLocalDate(3);
         $x("//input[@placeholder=\"Город\"]").val("Москва");
         $x("//input[@placeholder=\"Дата встречи\"]").doubleClick().sendKeys(planningDate);
